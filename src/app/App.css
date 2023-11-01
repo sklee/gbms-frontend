@@ -1,0 +1,85 @@
+.centredDiv {
+    position: absolute;
+    top: 40%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+}
+
+.plainList {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+.wrap {
+    max-width: 1024px;
+    margin: 5rem auto;
+    padding: 2rem;
+    background: #fff;
+    text-align: center;
+    border: 1px solid #efefef;
+    border-radius: 0.5rem;
+    position: relative;
+}
+
+.flexlayout__layout {
+    position: relative;
+}
+#root .ant-layout-content.content > .flexlayout__layout > .flexlayout__tab {
+    display: none;
+    padding: 0
+}
+
+#root .ant-layout-content.content > .flexlayout__layout > .flexlayout__tabset_sizer {
+    position: fixed;
+    top:-10;
+    z-index: -10;
+}
+
+#root .ant-layout-content.content > .flexlayout__layout .flexlayout__tab_button--selected {
+    background-color: #001529;
+}
+
+#root .ant-layout-content.content > .flexlayout__layout > .flexlayout__tabset > .flexlayout__tabset_tabbar_outer {
+    border-bottom: 1px solid #001529;
+}
+
+.flexlayout__border_sizer {
+    padding-top: 0px;
+    padding-bottom: 2px;
+    height: 0;
+}
+
+#contentsWrap .ant-layout.content {
+    height: calc(100% - 32px);
+    padding: 20px 20px 50px 20px;
+    background: #fff;
+    margin-top: 0;
+    overflow-y: auto;
+}
+
+::-webkit-scrollbar {
+    width: 16px;
+    height: 16px;
+    transition: all .5s ease;
+}
+
+::-webkit-scrollbar-thumb {
+    background: rgb(102, 102, 102, .25); /* 스크롤바 막대 색상 */
+    border-radius: 12px 12px 12px 12px;
+    background-clip: padding-box; 
+    border: 5px solid transparent;
+    
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: rgb(102, 102, 102, .4); /* 스크롤바 막대 색상 */
+    border-radius: 12px 12px 12px 12px;
+    background-clip: padding-box; 
+    border: 5px solid transparent;
+}
+
+.ant-picker-range-separator {
+    margin-right: 11px;
+}
